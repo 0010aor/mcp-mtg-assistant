@@ -8,7 +8,7 @@ While primarily used for looking up specific card details, this server can also 
 
 **User Query:** "If I cast a Finale of Devastation with X=10 and search for an Avenger of Zendikar, do the tokens also get +10/+10 and haste, or not?"
 
-![Example Interaction](example.png)
+<img src="sample.gif" alt="Example Video Walkthrough" width="1000"/>
 
 ### Available Tools
 
