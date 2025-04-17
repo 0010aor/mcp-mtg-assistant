@@ -1,15 +1,10 @@
 # MCP Server MTG Assistant
 
-A Model Context Protocol server that provides Magic: The Gathering card information fetching capabilities using the Scryfall API. T
-
-While primarily used for looking up specific card details, this server can also be a crucial first step in answering MTG rules questions. An effective agent workflow would be:
-1.  Receive a rules question involving specific cards.
-2.  Use the `get_mtg_card_info` tool to fetch the precise Oracle text and characteristics for *each* card mentioned. **Do not guess or assume card names or abilities.**
-3.  Use the accurate card data retrieved from the tool, along with the original rules question, to formulate the final answer.
+A Model Context Protocol server that provides Magic: The Gathering card information fetching capabilities using the Scryfall API.
 
 ### Example Rules Question Workflow
 
-Here's how the tool might be used to answer a rules question:
+While primarily used for looking up specific card details, this server can also be a crucial first step in answering MTG rules questions.
 
 **User Query:** "If I cast a Finale of Devastation with X=10 and search for an Avenger of Zendikar, do the tokens also get +10/+10 and haste, or not?"
 
@@ -20,12 +15,6 @@ Here's how the tool might be used to answer a rules question:
 -   `get_mtg_card_info` - Retrieves details for a specific Magic: The Gathering card from Scryfall.
     -   `query` (string, required): The search query string (e.g., card name, partial name, characteristics).
 
-### Prompts
-
--   **get_mtg_card_info**
-    -   Retrieves details for a specific Magic: The Gathering card from Scryfall.
-    -   Arguments:
-        -   `query` (string, required): Card name or search query.
 
 ## Installation and Running
 
